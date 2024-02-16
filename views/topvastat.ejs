@@ -1,0 +1,31 @@
+
+
+<link rel="stylesheet" href="../public/css/main.css">
+<div
+  className="ml-2 py-3 px-7 rounded-md border border-slate-200 bg-[url('/hallOfFame/Banner.png')] bg-cover bg-no-repeat bg-center"
+>
+  <div className="flex gap-10 ">
+    <div className="flex justify-center content-center gap-6">
+      <div className="w-[90px] h-[90px]">
+        <img src="../public/ribbon.png" alt="icon" width="{90}" height="{90}" />
+      </div>
+      <div className="flex  flex-col justify-center content-center">
+        <p className="font-bold text-sm mb-2"><%= data?.data?.description%></p>
+        <a
+          class="p-2 rounded-md mt-2 border border-slate-300"
+          href="https://community.wishup.co"
+          >Check our community</a
+        >
+      </div>
+    </div>
+    <div className="flex items-center">
+      <img
+        src="https://app.wishup.co/documents/<%= data?.data?.display_pic %>"
+        alt="va_icon"
+        width="64"
+        height="64"
+        class="rounded-full"
+      />
+    </div>
+  </div>
+</div>
